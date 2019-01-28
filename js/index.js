@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // not the cleanest solution, but it let me loop inside of "navAnchors" with the new appended items.
 //I should probably reformat all the page to let it be consistent with itself, but I think it's good for now.
+const nav = document.querySelector('nav');
 const newNavAnchor = document.createElement('a');
 newNavAnchor.href = "#";
 newNavAnchor.textContent = "New created link";
@@ -51,7 +52,6 @@ nav.prepend(newNavAnchor);
 nav.appendChild(copyOfNNA);
 const navAnchors = nav.querySelectorAll('a');
 
-const nav = document.querySelector('nav');
 const ctaImg = document.querySelector('#cta-img');
 const cta = document.querySelector('.cta');
 const h1 = document.querySelector('h1');
