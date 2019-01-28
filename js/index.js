@@ -69,6 +69,10 @@ h1.style = 'white-space: pre';
 h1.textContent = "DOM\r\n Is\r\n Awesome";
 //h1.innerHTML = "DOM<br> Is<br> Awesome"; //With this we use innerHTML, bad!
 ctaButton.textContent = "Get Started";
+let ctaButtonEvent = event => {
+  return event.target.style ="background: blue";
+}
+ctaButton.addEventListener('click', ctaButtonEvent);
 
 const h4s = document.querySelectorAll('h4');
 const paragraphs = document.querySelectorAll('p');
@@ -79,8 +83,9 @@ h4s[1].textContent = "About";
 paragraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 //middle img
-middleImg.src = "img/mid-page-accent.jpg";
 const middleImg = document.querySelector('.middle-img');
+middleImg.src = "img/mid-page-accent.jpg";
+
 
 //bottom section
 h4s[2].textContent = "Services";
