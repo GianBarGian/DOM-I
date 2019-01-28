@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //I still prefer to declare all vars at begenning, but sometimes it's necessary to declar them as you go, specially if you add things to the html and need to select the new elemnets inside your nodes.
+
 //nav
 const nav = document.querySelector('nav');
 const newNavAnchor = document.createElement('a');
@@ -74,7 +75,7 @@ let ctaButtonEvent = event => {
 }
 ctaButton.addEventListener('click', ctaButtonEvent);
 
-
+// h4 and paragraph selection
 const h4s = document.querySelectorAll('h4');
 const paragraphs = document.querySelectorAll('p');
 
